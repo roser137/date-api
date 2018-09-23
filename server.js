@@ -10,9 +10,8 @@ app.get('/', (req, res) => {
   res.json(js);
 })
 
-app.get('/hi', (req, res) => {
-  
+app.get('/hi', (req, res) => {  
   res.send('Hello World! <br/ >' + new Date());
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`listening on port ${port}!`))
